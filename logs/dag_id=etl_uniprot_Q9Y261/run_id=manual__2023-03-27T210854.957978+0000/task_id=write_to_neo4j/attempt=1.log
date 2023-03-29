@@ -1,0 +1,36 @@
+[2023-03-27T21:09:00.381+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_to_neo4j manual__2023-03-27T21:08:54.957978+00:00 [queued]>
+[2023-03-27T21:09:00.400+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_to_neo4j manual__2023-03-27T21:08:54.957978+00:00 [queued]>
+[2023-03-27T21:09:00.401+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:09:00.403+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T21:09:00.404+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:09:00.433+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_to_neo4j> on 2023-03-27 21:08:54.957978+00:00
+[2023-03-27T21:09:00.444+0000] {standard_task_runner.py:55} INFO - Started process 1283 to run task
+[2023-03-27T21:09:00.452+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_to_neo4j', 'manual__2023-03-27T21:08:54.957978+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpkp7duyfb']
+[2023-03-27T21:09:00.453+0000] {standard_task_runner.py:83} INFO - Job 53: Subtask write_to_neo4j
+[2023-03-27T21:09:00.651+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_to_neo4j manual__2023-03-27T21:08:54.957978+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T21:09:00.803+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_to_neo4j
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T21:08:54.957978+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T21:08:54.957978+00:00
+[2023-03-27T21:09:00.808+0000] {taskinstance.py:1775} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 217, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/uniprot_Q9Y261/main.py", line 48, in write_to_neo4j
+    data_to_write = parse_data(dict_data, accession)
+  File "/opt/airflow/dags/uniprot_Q9Y261/main.py", line 60, in parse_data
+    parsed_data.extend(parse_organisms(dict_data))
+NameError: name 'parse_organisms' is not defined
+[2023-03-27T21:09:00.841+0000] {taskinstance.py:1326} INFO - Marking task as FAILED. dag_id=etl_uniprot_Q9Y261, task_id=write_to_neo4j, execution_date=20230327T210854, start_date=20230327T210900, end_date=20230327T210900
+[2023-03-27T21:09:00.856+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 53 for task write_to_neo4j (name 'parse_organisms' is not defined; 1283)
+[2023-03-27T21:09:00.879+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-03-27T21:09:00.902+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,138 @@
+[2023-03-27T12:56:35.917+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:35.941+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:35.942+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:35.944+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T12:56:35.946+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:35.992+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T12:56:36.001+0000] {standard_task_runner.py:55} INFO - Started process 219 to run task
+[2023-03-27T12:56:36.013+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmppc947tev']
+[2023-03-27T12:56:36.014+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask write_citations_of_references
+[2023-03-27T12:56:36.197+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T12:56:36.443+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T12:56:36.855+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T12:56:36.886+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T125635, end_date=20230327T125636
+[2023-03-27T12:56:36.946+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T12:56:37.016+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:04:08.435+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:08.459+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:08.460+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:08.461+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:04:08.462+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:08.492+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:04:08.501+0000] {standard_task_runner.py:55} INFO - Started process 766 to run task
+[2023-03-27T13:04:08.506+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpkz5f9dny']
+[2023-03-27T13:04:08.508+0000] {standard_task_runner.py:83} INFO - Job 91: Subtask write_citations_of_references
+[2023-03-27T13:04:08.649+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:04:08.838+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:04:08.917+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:04:08.944+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T130408, end_date=20230327T130408
+[2023-03-27T13:04:09.003+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:04:09.061+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:09:17.857+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:17.883+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:17.884+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:17.885+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:09:17.886+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:17.912+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:09:17.921+0000] {standard_task_runner.py:55} INFO - Started process 1060 to run task
+[2023-03-27T13:09:17.928+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpr7bu7npw']
+[2023-03-27T13:09:17.930+0000] {standard_task_runner.py:83} INFO - Job 116: Subtask write_citations_of_references
+[2023-03-27T13:09:18.075+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:09:18.252+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:09:18.306+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:09:18.330+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T130917, end_date=20230327T130918
+[2023-03-27T13:09:18.384+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:09:18.435+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T18:51:44.624+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:44.655+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:44.656+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:44.657+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T18:51:44.659+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:44.699+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T18:51:44.707+0000] {standard_task_runner.py:55} INFO - Started process 16219 to run task
+[2023-03-27T18:51:44.712+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main copy.py', '--cfg-path', '/tmp/tmpwpjy72xz']
+[2023-03-27T18:51:44.713+0000] {standard_task_runner.py:83} INFO - Job 129: Subtask write_citations_of_references
+[2023-03-27T18:51:44.858+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T18:51:45.057+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T18:51:45.181+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T18:51:45.217+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T185144, end_date=20230327T185145
+[2023-03-27T18:51:45.291+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T18:51:45.374+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T20:59:33.119+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:33.133+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:33.133+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:33.134+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T20:59:33.135+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:33.154+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T20:59:33.159+0000] {standard_task_runner.py:55} INFO - Started process 837 to run task
+[2023-03-27T20:59:33.164+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmplzhkzcdt']
+[2023-03-27T20:59:33.165+0000] {standard_task_runner.py:83} INFO - Job 44: Subtask write_citations_of_references
+[2023-03-27T20:59:33.250+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T20:59:33.354+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T20:59:34.021+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T20:59:34.045+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T205933, end_date=20230327T205934
+[2023-03-27T20:59:34.105+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T20:59:34.139+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T21:35:42.598+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:42.625+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:42.627+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:42.628+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T21:35:42.629+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:42.659+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_citations_of_references> on 2023-03-26 00:00:00+00:00
+[2023-03-27T21:35:42.668+0000] {standard_task_runner.py:55} INFO - Started process 2539 to run task
+[2023-03-27T21:35:42.674+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_citations_of_references', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpac8nc7ft']
+[2023-03-27T21:35:42.676+0000] {standard_task_runner.py:83} INFO - Job 74: Subtask write_citations_of_references
+[2023-03-27T21:35:42.831+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_citations_of_references scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T21:35:42.991+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_citations_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T21:35:43.665+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T21:35:43.693+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_citations_of_references, execution_date=20230326T000000, start_date=20230327T213542, end_date=20230327T213543
+[2023-03-27T21:35:43.741+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T21:35:43.774+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

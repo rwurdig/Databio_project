@@ -1,0 +1,23 @@
+[2023-03-27T23:27:42.791+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.get_organisms manual__2023-03-27T23:27:36.266456+00:00 [queued]>
+[2023-03-27T23:27:42.818+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.get_organisms manual__2023-03-27T23:27:36.266456+00:00 [queued]>
+[2023-03-27T23:27:42.820+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T23:27:42.821+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T23:27:42.822+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T23:27:42.858+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): get_organisms> on 2023-03-27 23:27:36.266456+00:00
+[2023-03-27T23:27:42.870+0000] {standard_task_runner.py:55} INFO - Started process 1518 to run task
+[2023-03-27T23:27:42.876+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'get_organisms', 'manual__2023-03-27T23:27:36.266456+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpx5kn_tz4']
+[2023-03-27T23:27:42.878+0000] {standard_task_runner.py:83} INFO - Job 18: Subtask get_organisms
+[2023-03-27T23:27:43.057+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.get_organisms manual__2023-03-27T23:27:36.266456+00:00 [running]> on host 6cb4855fbc69
+[2023-03-27T23:27:43.283+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=get_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T23:27:36.266456+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T23:27:36.266456+00:00
+[2023-03-27T23:27:43.287+0000] {python.py:177} INFO - Done. Returned value was: [{'id': 'Q9Y261', 'organism_name': 'Homo sapiens', 'organism_common': 'Human', 'taxonomy_id': '9606', 'lineages': ['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']}]
+[2023-03-27T23:27:43.361+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=get_organisms, execution_date=20230327T232736, start_date=20230327T232742, end_date=20230327T232743
+[2023-03-27T23:27:43.413+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T23:27:43.497+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

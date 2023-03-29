@@ -1,0 +1,138 @@
+[2023-03-27T12:56:35.904+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:35.936+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:35.937+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:35.940+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T12:56:35.941+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:35.982+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T12:56:35.992+0000] {standard_task_runner.py:55} INFO - Started process 218 to run task
+[2023-03-27T12:56:36.002+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp5ikvv50i']
+[2023-03-27T12:56:36.005+0000] {standard_task_runner.py:83} INFO - Job 12: Subtask write_lineages_of_organisms
+[2023-03-27T12:56:36.181+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T12:56:36.401+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T12:56:36.558+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T12:56:36.600+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T125635, end_date=20230327T125636
+[2023-03-27T12:56:36.665+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T12:56:36.717+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:04:08.380+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:08.401+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:08.402+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:08.403+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:04:08.404+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:08.429+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:04:08.439+0000] {standard_task_runner.py:55} INFO - Started process 765 to run task
+[2023-03-27T13:04:08.447+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp8kseq9j8']
+[2023-03-27T13:04:08.449+0000] {standard_task_runner.py:83} INFO - Job 90: Subtask write_lineages_of_organisms
+[2023-03-27T13:04:08.592+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:04:08.760+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:04:08.833+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:04:08.852+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T130408, end_date=20230327T130408
+[2023-03-27T13:04:08.902+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:04:08.945+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:09:17.876+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:17.899+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:17.900+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:17.901+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:09:17.902+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:17.939+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:09:17.951+0000] {standard_task_runner.py:55} INFO - Started process 1061 to run task
+[2023-03-27T13:09:17.960+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpgrpr44po']
+[2023-03-27T13:09:17.963+0000] {standard_task_runner.py:83} INFO - Job 117: Subtask write_lineages_of_organisms
+[2023-03-27T13:09:18.094+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:09:18.272+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:09:18.318+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:09:18.345+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T130917, end_date=20230327T130918
+[2023-03-27T13:09:18.413+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:09:18.456+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T18:51:44.608+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:44.640+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:44.642+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:44.643+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T18:51:44.644+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:44.680+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T18:51:44.690+0000] {standard_task_runner.py:55} INFO - Started process 16217 to run task
+[2023-03-27T18:51:44.695+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '130', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main copy.py', '--cfg-path', '/tmp/tmpku_jn5wb']
+[2023-03-27T18:51:44.696+0000] {standard_task_runner.py:83} INFO - Job 130: Subtask write_lineages_of_organisms
+[2023-03-27T18:51:44.835+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T18:51:45.039+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T18:51:45.131+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T18:51:45.161+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T185144, end_date=20230327T185145
+[2023-03-27T18:51:45.231+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T18:51:45.302+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T20:59:33.102+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:33.116+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:33.117+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:33.118+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T20:59:33.120+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:33.138+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T20:59:33.144+0000] {standard_task_runner.py:55} INFO - Started process 836 to run task
+[2023-03-27T20:59:33.147+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp6e4n0gpq']
+[2023-03-27T20:59:33.149+0000] {standard_task_runner.py:83} INFO - Job 43: Subtask write_lineages_of_organisms
+[2023-03-27T20:59:33.237+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T20:59:33.337+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T20:59:33.468+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T20:59:33.498+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T205933, end_date=20230327T205933
+[2023-03-27T20:59:33.567+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T20:59:33.618+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T21:35:42.567+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:42.590+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:42.591+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:42.592+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T21:35:42.593+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:42.632+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_lineages_of_organisms> on 2023-03-26 00:00:00+00:00
+[2023-03-27T21:35:42.640+0000] {standard_task_runner.py:55} INFO - Started process 2538 to run task
+[2023-03-27T21:35:42.646+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_lineages_of_organisms', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp4o51bkj3']
+[2023-03-27T21:35:42.647+0000] {standard_task_runner.py:83} INFO - Job 73: Subtask write_lineages_of_organisms
+[2023-03-27T21:35:42.792+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_lineages_of_organisms scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T21:35:42.949+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_lineages_of_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T21:35:43.016+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T21:35:43.041+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_lineages_of_organisms, execution_date=20230326T000000, start_date=20230327T213542, end_date=20230327T213543
+[2023-03-27T21:35:43.101+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T21:35:43.159+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

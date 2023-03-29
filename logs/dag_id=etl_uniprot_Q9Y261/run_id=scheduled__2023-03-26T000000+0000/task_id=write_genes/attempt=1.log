@@ -1,0 +1,138 @@
+[2023-03-27T12:56:30.728+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:30.771+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T12:56:30.772+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:30.774+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T12:56:30.775+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T12:56:30.829+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T12:56:30.841+0000] {standard_task_runner.py:55} INFO - Started process 193 to run task
+[2023-03-27T12:56:30.859+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp5aozktvb']
+[2023-03-27T12:56:30.862+0000] {standard_task_runner.py:83} INFO - Job 10: Subtask write_genes
+[2023-03-27T12:56:31.142+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T12:56:31.504+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T12:56:32.299+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T12:56:32.345+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T125630, end_date=20230327T125632
+[2023-03-27T12:56:32.408+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T12:56:32.548+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:04:05.484+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:05.508+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:04:05.510+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:05.512+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:04:05.514+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:04:05.553+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:04:05.562+0000] {standard_task_runner.py:55} INFO - Started process 751 to run task
+[2023-03-27T13:04:05.570+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp1rjs92hj']
+[2023-03-27T13:04:05.571+0000] {standard_task_runner.py:83} INFO - Job 84: Subtask write_genes
+[2023-03-27T13:04:05.755+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:04:05.978+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:04:06.016+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:04:06.043+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T130405, end_date=20230327T130406
+[2023-03-27T13:04:06.104+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:04:06.165+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T13:09:15.497+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:15.511+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T13:09:15.512+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:15.513+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:09:15.514+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:09:15.536+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T13:09:15.542+0000] {standard_task_runner.py:55} INFO - Started process 1047 to run task
+[2023-03-27T13:09:15.549+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpanfrr1ok']
+[2023-03-27T13:09:15.550+0000] {standard_task_runner.py:83} INFO - Job 112: Subtask write_genes
+[2023-03-27T13:09:15.659+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:09:15.794+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T13:09:15.835+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:09:15.851+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T130915, end_date=20230327T130915
+[2023-03-27T13:09:15.885+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:09:15.905+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T18:51:41.665+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:41.688+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T18:51:41.689+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:41.691+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T18:51:41.692+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T18:51:41.715+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T18:51:41.722+0000] {standard_task_runner.py:55} INFO - Started process 16207 to run task
+[2023-03-27T18:51:41.726+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main copy.py', '--cfg-path', '/tmp/tmp7uje5av9']
+[2023-03-27T18:51:41.727+0000] {standard_task_runner.py:83} INFO - Job 127: Subtask write_genes
+[2023-03-27T18:51:41.826+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T18:51:41.970+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T18:51:42.020+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T18:51:42.038+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T185141, end_date=20230327T185142
+[2023-03-27T18:51:42.101+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T18:51:42.153+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T20:59:31.305+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:31.334+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T20:59:31.335+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:31.336+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T20:59:31.337+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T20:59:31.373+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T20:59:31.380+0000] {standard_task_runner.py:55} INFO - Started process 825 to run task
+[2023-03-27T20:59:31.387+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpjjt2u53v']
+[2023-03-27T20:59:31.389+0000] {standard_task_runner.py:83} INFO - Job 40: Subtask write_genes
+[2023-03-27T20:59:31.505+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T20:59:31.663+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T20:59:31.738+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T20:59:31.770+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T205931, end_date=20230327T205931
+[2023-03-27T20:59:31.800+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T20:59:31.832+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-27T21:35:39.671+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:39.694+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [queued]>
+[2023-03-27T21:35:39.695+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:39.697+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T21:35:39.697+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T21:35:39.747+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_genes> on 2023-03-26 00:00:00+00:00
+[2023-03-27T21:35:39.756+0000] {standard_task_runner.py:55} INFO - Started process 2525 to run task
+[2023-03-27T21:35:39.766+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_genes', 'scheduled__2023-03-26T00:00:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp1uiq_svj']
+[2023-03-27T21:35:39.768+0000] {standard_task_runner.py:83} INFO - Job 68: Subtask write_genes
+[2023-03-27T21:35:39.923+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_genes scheduled__2023-03-26T00:00:00+00:00 [running]> on host 1cde6c6ea984
+[2023-03-27T21:35:40.179+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_genes
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-26T00:00:00+00:00
+[2023-03-27T21:35:40.211+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T21:35:40.237+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_genes, execution_date=20230326T000000, start_date=20230327T213539, end_date=20230327T213540
+[2023-03-27T21:35:40.297+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T21:35:40.385+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

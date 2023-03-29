@@ -1,0 +1,23 @@
+[2023-03-27T13:01:29.242+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_organisms manual__2023-03-27T13:01:17.661312+00:00 [queued]>
+[2023-03-27T13:01:29.262+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_organisms manual__2023-03-27T13:01:17.661312+00:00 [queued]>
+[2023-03-27T13:01:29.263+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:01:29.264+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-27T13:01:29.265+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-27T13:01:29.292+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_organisms> on 2023-03-27 13:01:17.661312+00:00
+[2023-03-27T13:01:29.302+0000] {standard_task_runner.py:55} INFO - Started process 567 to run task
+[2023-03-27T13:01:29.307+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_organisms', 'manual__2023-03-27T13:01:17.661312+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmpembttiz8']
+[2023-03-27T13:01:29.308+0000] {standard_task_runner.py:83} INFO - Job 64: Subtask write_organisms
+[2023-03-27T13:01:29.453+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_organisms manual__2023-03-27T13:01:17.661312+00:00 [running]> on host 5da03bdb1b9e
+[2023-03-27T13:01:29.616+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_organisms
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T13:01:17.661312+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-27T13:01:17.661312+00:00
+[2023-03-27T13:01:29.652+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-27T13:01:29.673+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_organisms, execution_date=20230327T130117, start_date=20230327T130129, end_date=20230327T130129
+[2023-03-27T13:01:29.721+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-27T13:01:29.757+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

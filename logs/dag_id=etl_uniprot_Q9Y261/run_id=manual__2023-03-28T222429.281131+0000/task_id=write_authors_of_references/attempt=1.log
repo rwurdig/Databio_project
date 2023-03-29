@@ -1,0 +1,23 @@
+[2023-03-28T22:24:38.106+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_authors_of_references manual__2023-03-28T22:24:29.281131+00:00 [queued]>
+[2023-03-28T22:24:38.119+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_uniprot_Q9Y261.write_authors_of_references manual__2023-03-28T22:24:29.281131+00:00 [queued]>
+[2023-03-28T22:24:38.120+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28T22:24:38.121+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-28T22:24:38.122+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28T22:24:38.143+0000] {taskinstance.py:1303} INFO - Executing <Task(_PythonDecoratedOperator): write_authors_of_references> on 2023-03-28 22:24:29.281131+00:00
+[2023-03-28T22:24:38.149+0000] {standard_task_runner.py:55} INFO - Started process 434 to run task
+[2023-03-28T22:24:38.153+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_uniprot_Q9Y261', 'write_authors_of_references', 'manual__2023-03-28T22:24:29.281131+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/uniprot_Q9Y261/main.py', '--cfg-path', '/tmp/tmp6vah8un0']
+[2023-03-28T22:24:38.154+0000] {standard_task_runner.py:83} INFO - Job 44: Subtask write_authors_of_references
+[2023-03-28T22:24:38.236+0000] {task_command.py:388} INFO - Running <TaskInstance: etl_uniprot_Q9Y261.write_authors_of_references manual__2023-03-28T22:24:29.281131+00:00 [running]> on host 147865a62ab8
+[2023-03-28T22:24:38.329+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_uniprot_Q9Y261
+AIRFLOW_CTX_TASK_ID=write_authors_of_references
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T22:24:29.281131+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T22:24:29.281131+00:00
+[2023-03-28T22:24:38.362+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-28T22:24:38.378+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=etl_uniprot_Q9Y261, task_id=write_authors_of_references, execution_date=20230328T222429, start_date=20230328T222438, end_date=20230328T222438
+[2023-03-28T22:24:38.407+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-28T22:24:38.432+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
