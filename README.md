@@ -1,11 +1,5 @@
 
 <a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][LICENSE.txt]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/rodrigo-soares-wurdig]
 
 <!-- PROJECT LOGO -->
 
@@ -50,11 +44,9 @@
         <li><a href="#installation-and-prerequisites">Installation and Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#documentation">Documentation</a></li>
   </ol>
 </details>
@@ -169,15 +161,17 @@ Distributed under the MIT License. See [License](./Weavebio_project/LICENCE.txt)
 
 ## Contact
 
-👤 ** Rwurdig ** - [E-mail](rwurdig@gmail.com)
+👤 Rwurdig:  [E-mail](rwurdig@gmail.com)
 
-** Project Link **: [https://github.com/rwurdig/Weavebio_project](https://github.com/rwurdig/Weavebio_project)
+   Project Link: [https://github.com/rwurdig/Weavebio_project](https://github.com/rwurdig/Weavebio_project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DOCUMENTATION -->
 
-## Documentation of the Data Engineering Coding Challenge
+## Documentation 
+
+# Documentation of the Data Engineering Coding Challenge
 
 > *tl;dr*: The challenge is to create a data pipeline that will ingest a UniProt XML file (`data/Q9Y261.xml`) and store the data in a Neo4j graph database.
 > :warning: To apply, email join@weave.bio with 1) the link to your solution repo and 2) your resume.
