@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/rwurdig/Weavebio_project\img\wavebio_logo.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/wavebio_logo.png" alt="wavebio_logo" width="80" height="80">
   </a>
 
 <h3 align="center">Weavebio Project</h3>
