@@ -176,7 +176,7 @@ Distributed under the MIT License. See [License](./Databio_project/LICENCE.txt) 
 > *tl;dr*: The objective is to create a data pipeline that will ingest a UniProt XML file (`data/Q9Y261.xml`) and store the data in a Neo4j graph database.
 
 ## Task
-Read the XML file `Q9Y261.xml` located in the `data` [data](./data/Q9Y261.xml) directory. The XML file contains information about a protein. The task is to create a data pipeline that will ingest the XML file and store as much information as possible in a Neo4j graph database.
+Read the XML file `Q9Y261.xml` located in the `data` directory. The XML file contains information about a protein. The task is to create a data pipeline that will ingest the XML file and store as much information as possible in a Neo4j graph database.
 
 ## Requirements & Tools
 - Use Apache Airflow or a similar workflow management tool to orchestrate the pipeline
