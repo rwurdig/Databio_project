@@ -5,23 +5,23 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/rwurdig/Weavebio_project\img\wavebio_logo.png">
-    <img src="img/wavebio_logo.png" alt="wavebio_logo" width="80" height="80">
+  <a href="https://github.com/rwurdig/Databio_project\img\databio_logo.png">
+    <img src="img/databio_logo.png" alt="databio_logo" width="80" height="80">
   </a>
 
-<h3 align="center">Weavebio Project</h3>
+<h3 align="center">Databio Project</h3>
 
   <p align="center">
     This code reads an XML file and extracts data from it to create nodes and relationships in a Neo4j graph database. It uses the py2neo library to connect to the database and the xmltodict library to parse the XML file
     <br />
-    <a href="https://github.com/rwurdig/Weavebio_project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/rwurdig/Databio_project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/rwurdig/Weavebio_project">View Demo</a>
+    <a href="https://github.com/rwurdig/Databio_project">View Demo</a>
     ·
-    <a href="https://github.com/rwurdig/Weavebio_project/issues">Report Bug</a>
+    <a href="https://github.com/rwurdig/Databio_project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/rwurdig/Weavebio_project/issues">Request Feature</a>
+    <a href="https://github.com/rwurdig/Databio_project/issues">Request Feature</a>
   </p>
 </div>
 
@@ -113,11 +113,11 @@ This is how you setting up your project locally.
 
 ### 2. Clone the repository
 ```bash
-   git clone https://github.com/rwurdig/Weavebio_project.git
+   git clone https://github.com/rwurdig/Databio_project.git
 ```
 
 ```bash
-   cd Weavebio_project
+   cd Databio_project
 ```
 
 ### 3. Run the build.sh file with admin privileges.
@@ -152,7 +152,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See [License](./Weavebio_project/LICENCE.txt) for more information.
+Distributed under the MIT License. See [License](./Databio_project/LICENCE.txt) for more information.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,7 +163,7 @@ Distributed under the MIT License. See [License](./Weavebio_project/LICENCE.txt)
 
 👤 Rwurdig:  [E-mail](rwurdig@gmail.com)
 
-   Project Link: [https://github.com/rwurdig/Weavebio_project](https://github.com/rwurdig/Weavebio_project)
+   Project Link: [https://github.com/rwurdig/Databio_project](https://github.com/rwurdig/Databio_project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,10 +171,10 @@ Distributed under the MIT License. See [License](./Weavebio_project/LICENCE.txt)
 
 ## Documentation 
 
-# Documentation of the Data Engineering Coding Challenge
+# Documentation of the Biomedical Engineering Project
 
-> *tl;dr*: The challenge is to create a data pipeline that will ingest a UniProt XML file (`data/Q9Y261.xml`) and store the data in a Neo4j graph database.
-> :warning: To apply, email join@weave.bio with 1) the link to your solution repo and 2) your resume.
+> *tl;dr*: The objective is to create a data pipeline that will ingest a UniProt XML file (`data/Q9Y261.xml`) and store the data in a Neo4j graph database.
+
 ## Task
 Read the XML file `Q9Y261.xml` located in the `data` [data](./data/Q9Y261.xml) directory. The XML file contains information about a protein. The task is to create a data pipeline that will ingest the XML file and store as much information as possible in a Neo4j graph database.
 
@@ -204,29 +204,12 @@ Getting Started with Neo4j: https://neo4j.com/docs/getting-started/current/
 
 
 ## Data Model
-The data model should be a graph data model. The graph should contain nodes for proteins, genes, organisms, references, and more. The graph should contain edges for the relationships between these nodes. The relationships should be based on the XML schema. For example, the `protein` element contains a `recommendedName` element. The `recommendedName` element contains a `fullName` element. The `fullName` element contains the full name of the protein. The graph should contain an edge between the `protein` node and the `fullName` node.
+The data model should contain nodes for proteins, genes, organisms, references, and more. The graph should contain edges for the relationships between these nodes. The relationships should be based on the XML schema. For example, the `protein` element contains a `recommendedName` element. The `recommendedName` element contains a `fullName` element. The `fullName` element contains the full name of the protein. The graph should contain an edge between the `protein` node and the `fullName` node.
 
 Here is an example for the target data model:
 
 ![Example Data Model](./img/example_data_model.png)
 
-
-## Assessed Criteria
-
-> :warning: The solution will not be assessed based on correctness of the data model with respect to biological entities. This requires domain knowledge that we do not expect you to have. 
-We will assess the solution based on the following criteria:
-
-- The solution captures most of the data from the XML
-- The solution makes use of general purpose open-source tools
-- The solution can be scaled to handle larger datasets
-
 ## Example Code
 In the `example_code` directory, you will find some example Python code for loading data to Neo4j.
 
-## Submission
-**Please commit your solution to a new repository on GitHub**.
-
-Feel free to use this repository as a starting point or to start from scratch. Include a `README.md` file that describes how to run the solution. 
-Please also include a description how to set up and reproduce the environment required to run the solution.
-
-Finally, email join@weave.bio with 1) the link to your solution repo and 2) your resume
